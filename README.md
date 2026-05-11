@@ -46,37 +46,34 @@ Este projeto está sob a licença GNU.
 <table>
   <tr>
     <td align="center">
-      <a href="https://github.com/LucasNarZ">
-        <img src="https://avatars.githubusercontent.com/LucasNarZ" width="100px;" alt="Lucas"/><br>
-        <sub><b>Lucas</b></sub>
-      </a>
-    </td>
-
-    <td align="center">
-      <a href="https://github.com/brunavzq">
-        <img src="https://avatars.githubusercontent.com/brunavzq" width="100px;" alt="Bruna"/><br>
-        <sub><b>Bruna</b></sub>
-      </a>
-    </td>
-
-    <td align="center">
       <a href="https://github.com/rafael-cwb">
-        <img src="https://avatars.githubusercontent.com/rafael-cwb" width="100px;" alt="Rafael"/><br>
+        <img src="https://avatars.githubusercontent.com/rafael-cwb"
+             width="100px;" alt="Rafael"/><br>
         <sub><b>Rafael</b></sub>
       </a>
     </td>
 
     <td align="center">
       <a href="https://github.com/Ashura-bleck">
-        <img src="https://avatars.githubusercontent.com/Ashura-bleck" width="100px;" alt="Herick"/><br>
+        <img src="https://avatars.githubusercontent.com/Ashura-bleck"
+             width="100px;" alt="Herick"/><br>
         <sub><b>Herick</b></sub>
       </a>
     </td>
 
     <td align="center">
       <a href="https://github.com/AkiraVA28">
-        <img src="https://avatars.githubusercontent.com/AkiraVA28" width="100px;" alt="Akira"/><br>
+        <img src="https://avatars.githubusercontent.com/AkiraVA28"
+             width="100px;" alt="Akira"/><br>
         <sub><b>Akira</b></sub>
+      </a>
+    </td>
+
+    <td align="center">
+      <a href="https://github.com/SEU_USUARIO">
+        <img src="URL_DA_IMAGEM"
+             width="100px;" alt="Lucas"/><br>
+        <sub><b>Lucas</b></sub>
       </a>
     </td>
   </tr>
