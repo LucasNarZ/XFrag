@@ -1,0 +1,277 @@
+html
+
+<!DOCTYPE html> <!-- Define o tipo de documento como HTML5 -->
+<html lang="pt-BR"> <!-- Início do documento, idioma definido como português do Brasil -->
+<head>
+  <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
+  <title>Faixa com CSS separado</title> <!-- Título da página exibido na aba do navegador -->
+  <!-- link para o arquivo CSS externo -->
+  <link rel="stylesheet" href="pagina_de_teste.css"> <!-- Importa o arquivo CSS -->
+</head>
+<body> <!-- Início do corpo da página -->
+
+  <!-- faixa azul -->
+  <div class="faixa"></div> <!-- Div que representa a faixa azul no topo -->
+
+  <!-- quadros iguais -->
+  <div class="retangulo"></div> <!-- Primeiro quadro branco -->
+  <div class="retangulo"></div> <!-- Segundo quadro branco -->
+  <div class="retangulo"></div> <!-- Terceiro quadro branco -->
+
+  <!-- quadro diferente -->
+  <div class="retangulo-diferente"></div> <!-- Quadro menor, diferente dos anteriores -->
+
+  <!-- quadro identificação -->
+  <div class="retangulo-identificao"></div> <!-- Quadro azul para identificação -->
+
+  <!-- quadro do gráfico -->
+  <div class="retangulo-grafico"></div> <!-- Quadro branco para o gráfico -->
+
+  <!-- botão de menu com ícone -->
+  <button class="botao-menu"> <!-- Botão de menu -->
+    <img src="icones/menu.png" class="botao-menu"> <!-- Ícone dentro do botão -->
+  </button>
+
+  <!-- botão de pessoa com ícone -->
+  <button class="botao-pessoa"> <!-- Botão de pessoa -->
+    <img src="icones/pesssoa.png" class="botao-pessoa"> <!-- Ícone dentro do botão -->
+  </button>
+
+  <!-- botão de sino com ícone -->
+  <button class="botao-sino"> <!-- Botão de sino -->
+    <img src="icones/sino.png" class="botao-sino"> <!-- Ícone dentro do botão -->
+  </button>
+
+  <!-- botão de casa com ícone e texto -->
+  <button class="botao-casa"> <!-- Botão de casa -->
+    <img src="icones/casa.png" alt="Casa" class="icone"> <!-- Ícone da casa -->
+    <span class="texto-botao">INICIO |</span> <!-- Texto ao lado do ícone -->
+  </button>
+
+  <!-- botão de calculadora com ícone e texto -->
+  <button class="botao-calculadora"> <!-- Botão de calculadora -->
+    <img src="icones/calculadora.png" alt="Calculadora" class="icone"> <!-- Ícone da calculadora -->
+    <span class="texto-botao">Calcular Score</span> <!-- Texto ao lado do ícone -->
+  </button>
+
+  <!-- botão de Limpar Seleção com ícone e texto -->
+  <button class="botao-voltar"> <!-- Botão de limpar seleção -->
+    <img src="icones/voltar.png" alt="Voltar" class="icone"> <!-- Ícone de voltar -->
+    <span class="texto-botao">Limpar Seleção</span> <!-- Texto ao lado do ícone -->
+  </button>
+
+</body> <!-- Fim do corpo da página -->
+</html> <!-- Fim do documento HTML -->
+
+
+
+
+css
+
+* {
+  margin: 0; /* Remove margens padrão de todos os elementos */
+  padding: 0; /* Remove espaçamento interno padrão */
+  box-sizing: border-box; /* Inclui borda e padding no cálculo de largura/altura */
+}
+
+html, body {
+  margin: 0; /* Remove margens do HTML e body */
+  padding: 0; /* Remove espaçamento interno */
+  height: 100%; /* Define altura total da tela */
+  width: 100%; /* Define largura total da tela */
+}
+
+/* faixa azul */
+.faixa {
+  background: #121369; /* Cor de fundo azul escuro */
+  color: white; /* Texto branco */
+  text-align: center; /* Centraliza texto horizontalmente */
+  width: 100%; /* Ocupa toda a largura */
+  height: 80px; /* Altura da faixa */
+  line-height: 80px; /* Centraliza texto verticalmente */
+  font-size: 24px; /* Tamanho da fonte */
+  border-bottom-left-radius: 20px; /* Arredonda canto inferior esquerdo */
+  border-bottom-right-radius: 20px; /* Arredonda canto inferior direito */
+}
+
+.retangulo {
+  width: 700px; /* Largura do quadro */
+  height: 160px; /* Altura do quadro */
+  background-color: white; /* Fundo branco */
+  border: 3px solid gray; /* Borda cinza */
+  border-radius: 10px; /* Cantos arredondados */
+  position: relative; /* Permite posicionamento com top/left */
+  left: 825px; /* Move para a direita */
+  top: 20px; /* Move para baixo */
+  margin-bottom: 10px; /* Espaço abaixo */
+}
+
+.retangulo-diferente {
+  width: 700px;
+  height: 100px;
+  background-color: white;
+  border: 3px solid gray;
+  border-radius: 10px;
+  margin-bottom: 50px;
+  position: relative;
+  left: 825px;
+  top: 40px;
+}
+
+.retangulo-identificao {
+  width: 500px;
+  height: 300px;
+  background-color: #121369; /* Azul escuro */
+  border: 3px solid gray;
+  border-radius: 20px;
+  margin-bottom: 50px;
+  position: relative;
+  left: 15px;
+  top: -625px;
+}
+
+.retangulo-grafico {
+  width: 500px;
+  height: 300px;
+  background-color: white;
+  border: 3px solid gray;
+  border-radius: 20px;
+  margin-bottom: 50px;
+  position: relative;
+  left: 15px;
+  top: -625px;
+}
+
+.retangulo {
+  text-align: center; /* Centraliza texto */
+  color: #121369; /* Texto azul escuro */
+  font-size: 18px; /* Tamanho da fonte */
+}
+
+/* Botão de menu */
+.botao-menu {
+  width: 50px;
+  height: 50px;
+  background-color: transparent; /* Fundo transparente */
+  border: none; /* Remove borda */
+  cursor: pointer; /* Cursor de mãozinha */
+  display: flex; /* Flexbox para alinhar conteúdo */
+  align-items: center; /* Centraliza verticalmente */
+  justify-content: center; /* Centraliza horizontalmente */
+  position: relative;
+  left: 725px;
+  top: -715px;
+}
+
+/* Botão de pessoa */
+.botao-pessoa {
+  width: 55px;
+  height: 55px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  left: 600px;
+  top: -740px;
+}
+
+/* Botão de sino */
+.botao-sino {
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  left: 570px;
+  top: -765px;
+}
+
+.botao-casa {
+  display: flex; /* Ícone e texto lado a lado */
+  align-items: center; /* Centraliza verticalmente */
+  gap: 15px; /* Espaço entre ícone e texto */
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: #ffffff; /* Texto branco */
+  position: relative;
+  left: 15px;
+  top: -1575px;
+}
+
+.icone {
+  width: 30px; /* Tamanho do ícone */
+  height: 30px;
+}
+
+.texto-botao {
+  font-weight: bold; /* Texto em negrito */
+}
+
+.botao-calculadora {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px 50px;
+  background-color: #121369;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 18px;
+  color: #ffffff;
+  position: relative;
+  left: 1230px;
+  top: -965px;
+}
+
+.botao-calculadora:hover {
+  background-color: #0d0d47; /* Muda cor ao passar o mouse */
+}
+
+.botao-voltar {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px 50px;
+  background-color: #121369;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 18px;
+  color: #ffffff;
+  position: relative;
+  left: 870px;
+  top: -1018px;
+}
+
+.botao-voltar:hover {
+  background-color: #0d0d47
+
+
+
+projeto grafico
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+  const ctx = document.getElementById('graficoSintomas');
+  new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: ['Cognitivos', 'Comportamentais', 'Físicos'],
+      datasets: [{
+        label: 'Sintomas Marcados',
+        data: [0, 0, 0], // valores iniciais
+        backgroundColor: '#0d0d47'
+      }]
+    }
+  });
+</script>
