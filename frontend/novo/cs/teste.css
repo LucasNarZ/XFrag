@@ -1,0 +1,395 @@
+        :root {
+            --primary-green: #131496;
+            --primary-hover: #131496;
+            --bg-light: #f4f6f9;
+            --text-dark: #333333;
+            --text-muted: #666666;
+            
+            /* Cores dos blocos de sintomas */
+            --cognitive-bg: #e8f8f0;
+            --cognitive-border: #00cc74;
+            --behavioral-bg: #fff9e6;
+            --behavioral-border: #ffbc00;
+            --physical-bg: #ffebee;
+            --physical-border: #ff3b30;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-light);
+            padding: 20px;
+            color: var(--text-dark);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* --- NAVBAR --- */
+        .navbar {
+            background-color: var(--primary-green);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        .nav-left {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+
+        .nav-separator {
+            width: 1px;
+            height: 24px;
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .user-profile {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 500;
+        }
+
+        .icon-btn {
+            background: none;
+            border: none;
+            color: white;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+        }
+
+        /* --- DASHBOARD LAYOUT --- */
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: 320px 1fr;
+            gap: 25px;
+        }
+
+        @media (max-width: 900px) {
+            .dashboard-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* --- SIDEBAR LEFT --- */
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .card-profile {
+            background-color: #131496;
+            background: linear-gradient(135deg, #01014f, #9898e6);
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+
+        .profile-info {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .profile-text h4 {
+            font-size: 0.95rem;
+            font-weight: 600;
+        }
+
+        .profile-text p {
+            font-size: 0.8rem;
+            opacity: 0.9;
+        }
+
+        .profession-tag {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.85rem;
+            margin-bottom: 20px;
+            opacity: 0.95;
+        }
+
+        .btn-new-evaluation {
+            width: 100%;
+            background-color: var(--primary-green);
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 10px;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            transition: background 0.2s;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-new-evaluation:hover {
+            background-color: var(--primary-hover);
+        }
+
+        /* Progress Card */
+        .card-progress {
+            background-color: white;
+            border-radius: 15px;
+            padding: 25px;
+            border: 2px solid #e2e8f0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .progress-circle-container {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            margin-bottom: 20px;
+        }
+
+        .progress-circle {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: conic-gradient(var(--primary-green) 0%, #edf2f7 0%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.3s ease;
+        }
+
+        .progress-circle::before {
+            content: "";
+            position: absolute;
+            width: 126px;
+            height: 126px;
+            background-color: white;
+            border-radius: 50%;
+        }
+
+        .progress-value {
+            position: relative;
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--text-dark);
+        }
+
+        .progress-text {
+            font-weight: 600;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+            line-height: 1.4;
+        }
+
+        
+        /* --- MAIN FORM CONTENT --- */
+        .main-content {
+            background-color: white;
+            border-radius: 15px;
+            padding: 30px;
+            border: 2px solid #e2e8f0;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        .form-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #edf2f7;
+            padding-bottom: 15px;
+        }
+
+        .form-title-area h2 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .form-title-area p {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-top: 4px;
+        }
+
+        .btn-instructions {
+            background-color: white;
+            border: 1px solid var(--primary-green);
+            color: var(--primary-green);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 0.85rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        /* Patient Data Inputs */
+        .patient-info-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 15px;
+        }
+
+        @media (max-width: 600px) {
+            .patient-info-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .input-group {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .input-group label {
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: var(--text-dark);
+        }
+
+        .input-group input, .input-group select {
+            padding: 12px;
+            border: 1.5px solid #cbd5e1;
+            border-radius: 10px;
+            font-size: 0.9rem;
+            outline: none;
+            background-color: #fff;
+        }
+
+        .input-group input:focus, .input-group select:focus {
+            border-color: var(--primary-green);
+        }
+
+        /* Symptom Blocks */
+        .symptoms-section {
+            border-radius: 12px;
+            border: 1.5px solid transparent;
+            overflow: hidden;
+        }
+
+        .section-header {
+            padding: 12px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 700;
+            font-size: 0.95rem;
+        }
+
+        .section-title {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .section-counter {
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        .checkbox-grid {
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+            gap: 15px;
+            background-color: #fff;
+        }
+
+        .checkbox-label {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        /* Custom Styling for Categories */
+        .symptoms-section.cognitive { border-color: var(--cognitive-border); }
+        .symptoms-section.cognitive .section-header { background-color: var(--cognitive-bg); color: #047857; }
+        .symptoms-section.cognitive input[type="checkbox"] { accent-color: var(--cognitive-border); transform: scale(1.2); }
+
+        .symptoms-section.behavioral { border-color: var(--behavioral-border); }
+        .symptoms-section.behavioral .section-header { background-color: var(--behavioral-bg); color: #b45309; }
+        .symptoms-section.behavioral input[type="checkbox"] { accent-color: var(--behavioral-border); transform: scale(1.2); }
+
+        .symptoms-section.physical { border-color: var(--physical-border); }
+        .symptoms-section.physical .section-header { background-color: var(--physical-bg); color: #b91c1c; }
+        .symptoms-section.physical input[type="checkbox"] { accent-color: var(--physical-border); transform: scale(1.2); }
+
+        /* Form Footer Actions */
+        .form-actions {
+            display: flex;
+            justify-content: flex-end;
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+        .btn-clear {
+            background-color: white;
+            border: 1.5px solid #cbd5e1;
+            padding: 12px 24px;
+            border-radius: 10px;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--text-muted);
+        }
+
+        .btn-calculate {
+            background-color: var(--primary-green);
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 10px;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        .btn-calculate:hover {
+            background-color: var(--primary-hover);
+        }

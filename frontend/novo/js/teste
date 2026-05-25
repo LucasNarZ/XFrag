@@ -1,0 +1,43 @@
+
+    // Lógica para controle dinâmico da Interface
+    const checkboxes = document.querySelectorAll('.symptom-checkbox');
+    const checkedCountEl = document.getElementById('checkedCount');
+    const progressValueEl = document.getElementById('progressValue');
+    const progressCircle = document.getElementById('progressCircle');
+    const btnClear = document.getElementById('btnClear');
+
+    const totalSymptoms = 12;
+
+    function updateDashboard() {
+        // Total Geral Selecionados
+        const checkedCount = document.querySelectorAll('.symptom-checkbox:checked').length;
+        checkedCountEl.textContent = checkedCount;
+
+        // Cálculo da Porcentagem
+        const percentage = Math.round((checkedCount / totalSymptoms) * 100);
+        progressValueEl.textContent = `${percentage}%`;
+
+        // Atualização Visual do Gráfico de Rosca (Conic Gradient)
+        progressCircle.style.background = `conic-gradient(var(--primary-green) ${percentage}%, #edf2f7 ${percentage}%)`;
+
+        // Atualização Individual de Contadores por Categoria
+        document.querySelectorAll('.symptoms-section').forEach(section => {
+            const sectionChecked = section.querySelectorAll('.symptom-checkbox:checked').length;
+            section.querySelector('.cat-count').textContent = sectionChecked;
+        });
+    }
+
+    // Event Listener para cada checkbox marcado/desmarcado
+    checkboxes.forEach(checkbox => {
+        checkbox.addEventListener('change', updateDashboard);
+    });
+
+    // Event Listener do Botão "Limpar Seleção"
+    btnClear.addEventListener('click', () => {
+        checkboxes.forEach(checkbox => checkbox.checked = false);
+        updateDashboard();
+    });
+
+    // Inicialização da tela
+    updateDashboard();
+
