@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projeto EC | Cadastro Médico</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+  <main class="auth-page">
+    <section class="auth-hero">
+      <div class="brand">
+        <div class="brand-mark">EC</div>
+        <div>
+          <p class="brand-title">Projeto EC</p>
+          <p class="brand-caption">Cadastro profissional</p>
+        </div>
+      </div>
+      <div>
+        <p class="eyebrow">Primeiro acesso</p>
+        <h1>Crie sua conta médica.</h1>
+        <p class="lead">Os dados profissionais identificam o médico responsável pelos pacientes e avaliações registradas.</p>
+      </div>
+      <a class="btn secondary" href="../index.html">Voltar para login</a>
+    </section>
+
+    <section class="auth-panel">
+      <form class="form-card" action="dashboard.html">
+        <p class="eyebrow">Dados do médico</p>
+        <h2>Cadastro</h2>
+        <div class="form-grid">
+          <div class="field">
+            <label for="nome">Nome completo</label>
+            <input id="nome" type="text" placeholder="Dra. Ana Silva">
+          </div>
+          <div class="form-grid two">
+            <div class="field">
+              <label for="crm">CRM</label>
+              <input id="crm" type="text" placeholder="123456">
+            </div>
+            <div class="field">
+              <label for="especialidade">Especialidade</label>
+              <input id="especialidade" type="text" placeholder="Pediatria">
+            </div>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="ana@email.com">
+          </div>
+          <div class="field">
+            <label for="senha">Senha</label>
+            <input id="senha" type="password" placeholder="Mínimo de 8 caracteres">
+          </div>
+          <button class="btn primary" type="submit">Cadastrar e continuar</button>
+        </div>
+      </form>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto EC | Avaliação</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+    <div class="app-shell">
+        <aside class="sidebar">
+            <div class="brand">
+                <div class="brand-mark">EC</div>
+                <div>
+                    <p class="brand-title">Projeto EC</p>
+                    <p class="brand-caption">Checklist clínico</p>
+                </div>
+            </div>
+            <nav class="nav-list">
+                <a class="nav-link" href="dashboard.html">Pacientes</a>
+                <a class="nav-link active" href="avaliacoes.html">Avaliações</a>
+                <a class="nav-link" href="../index.html">Sair</a>
+            </nav>
+        </aside>
+
+        <main class="main">
+            <header class="page-header">
+                <div>
+                    <p class="eyebrow">Nova avaliação</p>
+                    <h1>Checklist de sintomas por categoria.</h1>
+                    <p class="lead">Percorra cada grupo clínico e marque apenas as características presentes no
+                        paciente.</p>
+                    <div class="patient-inline-card">
+                        <strong>Paciente </strong>
+                        <span>João Silva</span>
+                        <span>Masculino</span>
+                        <span>Nascimento: 20/08/2015</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <p class="eyebrow">Prévia</p>
+                    <h2 data-score>0.00</h2>
+                    <p class="muted"><span data-selected-count>0 de 12</span> sintomas presentes</p>
+                    <span class="status good" data-recommendation>Nao encaminhar</span>
+                </div>
+            </header>
+
+            <form class="grid" action="relatorio.html">
+                <section class="checklist grouped-checklist">
+                    <div class="check-group check-group-cognitive">
+                        <header class="check-group-header">
+                            <div>
+                                <p class="eyebrow">Grupo 01</p>
+                                <h2>Sintomas Cognitivos</h2>
+                            </div>
+                            <span data-group-count>0 selecionados</span>
+                        </header>
+                        <div class="check-items">
+                            <label class="check-item"><input type="checkbox" data-symptom="yes"><span
+                                    class="check-box"></span><span class="check-copy"><strong>Deficiencia
+                                        intelectual</strong><span>Código: DEFICIENCIA_INTELECTUAL</span></span></label>
+                            <label class="check-item"><input type="checkbox" data-symptom="yes"><span
+                                    class="check-box"></span><span class="check-copy"><strong>Dificuldades de
+                                        aprendizagem</strong><span>Código:
+                                        DIFICULDADES_APRENDIZAGEM</span></span></label>
+                            <label class="check-item"><input type="checkbox" data-symptom="yes"><span
+                                    class="check-box"></span><span class="check-copy"><strong>Atraso na
+                                        fala</strong><span>Código: ATRASO_FALA</span></span></label>
+                            <label class="check-item"><input type="checkbox" data-symptom="yes"><span
+                                    class="check-box"></span><span class="check-copy"><strong>Deficit de
+                                        atencao</strong><span>Código: DEFICIT_ATENCAO</span></span></label>
+                            <label class="check-item"><input type="checkbox" data-symptom="yes"><span
+                                    class="check-box"></span><span
+                                    class="check-copy"><strong>Hiperatividade</strong><span>Código:
+                                        HIPERATIVIDADE</span></span></label>
+                        </div>
+                    </div>
+
+                    <div class="check-group check-group-behavior">
+                        <header class="check-group-header">
+                            <div>
+                                <p class="eyebrow">Grupo 02</p>
+                                <h2>Sintomas Comportamentais</h2>
+                            </div>
+                            <span data-group-count>0 selecionados</span>
+                        </header>
+                        <div class="check-items">
+                            <label class="check-item"><input type="checkbox" data-symptom="yes"><span
+                                    class="check-box"></span><span class="check-copy"><strong>Evita contato
+                                        visual</strong><span>Código: EVITA_CONTATO_VISUAL</span></span></label>
+                            <label class="check-item"><input type="checkbox" data-symptom="yes"><span
+                                    class="check-box"></span><span class="check-copy"><strong>Evita contato
+                                        fisico</strong><span>Código: EVITA_CONTATO_FISICO</span></span></label>
+                            <label class="check-item"><input type="checkbox" data-symptom="yes"><span
+                                    class="check-box"></span><span class="check-copy"><strong>Movimentos
+                                        repetitivos</strong><span>Código: MOVIMENTOS_REPETITIVOS</span></span></label>
+                            <label class="check-item"><input type="checkbox" data-symptom="yes"><span
+                                    class="check-box"></span><span
+                                    class="check-copy"><strong>Agressividade</strong><span>Código:
+                                        AGRESSIVIDADE</span></span></label>
+                        </div>
+                    </div>
+
+                    <div class="check-group check-group-physical">
+                        <header class="check-group-header">
+                            <div>
+                                <p class="eyebrow">Grupo 03</p>
+                                <h2>Sintomas Físicos</h2>
+                            </div>
+                            <span data-group-count>0 selecionados</span>
+                        </header>
+                        <div class="check-items">
+                            <label class="check-item"><input type="checkbox" data-symptom="yes"><span
+                                    class="check-box"></span><span class="check-copy"><strong>Face
+                                        alongada/orelhas</strong><span>Código:
+                                        FACE_ALONGADA_ORELHAS</span></span></label>
+                            <label class="check-item"><input type="checkbox" data-symptom="yes"><span
+                                    class="check-box"></span><span
+                                    class="check-copy"><strong>Macroorquidismo</strong><span>Código:
+                                        MACROORQUIDISMO</span></span></label>
+                            <label class="check-item"><input type="checkbox" data-symptom="yes"><span
+                                    class="check-box"></span><span class="check-copy"><strong>Hipermobilidade
+                                        articular</strong><span>Código: HIPERMOBILIDADE_ARTICULAR</span></span></label>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="field">
+                    <label for="observacoes">Observações da avaliação</label>
+                    <textarea id="observacoes" placeholder="Registre observações clínicas relevantes."></textarea>
+                </div>
+                <div class="button-row">
+                    <button class="btn primary" type="submit">Gerar relatório</button>
+                    <a class="btn secondary" href="dashboard.html">Cancelar</a>
+                </div>
+            </form>
+        </main>
+    </div>
+    <script src="../assets/js/app.js"></script>
+</body>
+
+</html>
