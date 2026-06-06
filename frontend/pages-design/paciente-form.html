@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projeto EC | Paciente</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand"><div class="brand-mark">EC</div><div><p class="brand-title">Projeto EC</p><p class="brand-caption">Cadastro clínico</p></div></div>
+      <nav class="nav-list">
+        <a class="nav-link" href="dashboard.html">Pacientes</a>
+        <a class="nav-link" href="avaliacoes.html">Avaliações</a>
+        <a class="nav-link" href="../index.html">Sair</a>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <header class="page-header">
+        <div>
+          <p class="eyebrow">Paciente</p>
+          <h1>Dados do paciente.</h1>
+          <p class="lead">Registre as informações necessárias para relacionar avaliações ao paciente correto.</p>
+        </div>
+      </header>
+
+      <form class="form-card" action="dashboard.html">
+        <div class="form-grid two">
+          <div class="field">
+            <label for="nome">Nome completo</label>
+            <input id="nome" type="text" value="João Silva">
+          </div>
+          <div class="field">
+            <label for="data">Data de nascimento</label>
+            <input id="data" type="date" value="2015-08-20">
+          </div>
+          <div class="field">
+            <label for="sexo">Sexo</label>
+            <select id="sexo">
+              <option>Masculino</option>
+              <option>Feminino</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="responsavel">Responsável</label>
+            <input id="responsavel" type="text" value="Maria Silva">
+          </div>
+        </div>
+        <div class="field" style="margin-top: 16px;">
+          <label for="observacoes">Observações</label>
+          <textarea id="observacoes">Paciente acompanhado pela mãe.</textarea>
+        </div>
+        <div class="button-row" style="margin-top: 20px;">
+          <button class="btn primary" type="submit">Salvar paciente</button>
+          <a class="btn secondary" href="avaliacao.html">Iniciar avaliação</a>
+        </div>
+      </form>
+    </main>
+  </div>
+</body>
+</html>
