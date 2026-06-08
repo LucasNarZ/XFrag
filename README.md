@@ -42,38 +42,36 @@ Atualmente, o sistema funciona apenas em ambiente local, sendo necessário reali
 Este projeto está sob a licença GNU.
 
 # Participantes
-
 <table>
   <tr>
     <td align="center">
       <a href="https://github.com/rafael-cwb">
-        <img src="https://avatars.githubusercontent.com/rafael-cwb"
-             width="100px;" alt="Rafael"/><br>
+        <img src="https://github.com/rafael-cwb.png" width="80px"/><br/>
         <sub><b>Rafael</b></sub>
       </a>
     </td>
-
     <td align="center">
       <a href="https://github.com/Ashura-bleck">
-        <img src="https://avatars.githubusercontent.com/Ashura-bleck"
-             width="100px;" alt="Herick"/><br>
-        <sub><b>Herick</b></sub>
+        <img src="https://github.com/Ashura-bleck.png" width="80px"/><br/>
+        <sub><b>João Lima</b></sub>
       </a>
     </td>
-
-    <td align="center">
+      <td align="center">
+      <a href="https://github.com/brunavzq">
+        <img src="https://github.com/brunavzq.png" width="80px"/><br/>
+        <sub><b>João Lima</b></sub>
+      </a>
+    </td>
+        <td align="center">
       <a href="https://github.com/AkiraVA28">
-        <img src="https://avatars.githubusercontent.com/AkiraVA28"
-             width="100px;" alt="Akira"/><br>
-        <sub><b>Akira</b></sub>
+        <img src="https://github.com/AkiraVA28.png" width="80px"/><br/>
+        <sub><b>João Lima</b></sub>
       </a>
     </td>
-
-    <td align="center">
-      <a href="https://github.com/SEU_USUARIO">
-        <img src="URL_DA_IMAGEM"
-             width="100px;" alt="Lucas"/><br>
-        <sub><b>Lucas</b></sub>
+        <td align="center">
+      <a href="https://github.com/LucasNarZ">
+        <img src="https://github.com/LucasNarz.png" width="80px"/><br/>
+        <sub><b>João Lima</b></sub>
       </a>
     </td>
   </tr>
