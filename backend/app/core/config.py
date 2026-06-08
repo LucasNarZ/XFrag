@@ -5,12 +5,6 @@ from pydantic_settings import BaseSettings
 
 class Settings(BaseSettings):
     database_url: str
-    cors_origins: list[str] = [
-        "http://localhost:5173",
-        "http://127.0.0.1:5173",
-        "http://localhost:3000",
-        "http://127.0.0.1:3000",
-    ]
     session_cookie_name: str = "session_token"
     session_ttl_seconds: int = 86400
     session_cookie_secure: bool = False
