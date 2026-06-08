@@ -2,7 +2,9 @@ from collections.abc import AsyncGenerator
 from contextlib import asynccontextmanager
 
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 
+from app.core.config import settings
 from app.core.database import AsyncSessionLocal, init_models
 from app.core.exception_handler import (
     DOMAIN_EXCEPTIONS,
@@ -26,6 +28,14 @@ async def lifespan(_app: FastAPI) -> AsyncGenerator[None, None]:
 
 
 app = FastAPI(lifespan=lifespan)
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origin_regex=".*",
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 for domain_exception in DOMAIN_EXCEPTIONS:
     app.add_exception_handler(domain_exception, domain_exception_handler)

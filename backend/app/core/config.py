@@ -1,9 +1,10 @@
-from pydantic_settings import BaseSettings
 from pathlib import Path
+
+from pydantic_settings import BaseSettings
 
 
 class Settings(BaseSettings):
-    database_url: str 
+    database_url: str
     session_cookie_name: str = "session_token"
     session_ttl_seconds: int = 86400
     session_cookie_secure: bool = False
