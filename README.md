@@ -47,31 +47,31 @@ Este projeto está sob a licença GNU.
     <td align="center">
       <a href="https://github.com/rafael-cwb">
         <img src="https://github.com/rafael-cwb.png" width="80px"/><br/>
-        <sub><b>Rafael</b></sub>
+        <sub><b>Rafael Soares</b></sub>
       </a>
     </td>
     <td align="center">
       <a href="https://github.com/Ashura-bleck">
         <img src="https://github.com/Ashura-bleck.png" width="80px"/><br/>
-        <sub><b>João Lima</b></sub>
+        <sub><b>Herick Pontes</b></sub>
       </a>
     </td>
       <td align="center">
       <a href="https://github.com/brunavzq">
         <img src="https://github.com/brunavzq.png" width="80px"/><br/>
-        <sub><b>João Lima</b></sub>
+        <sub><b>Bruna Sbardeloto</b></sub>
       </a>
     </td>
         <td align="center">
       <a href="https://github.com/AkiraVA28">
         <img src="https://github.com/AkiraVA28.png" width="80px"/><br/>
-        <sub><b>João Lima</b></sub>
+        <sub><b>Ricardo Akira</b></sub>
       </a>
     </td>
         <td align="center">
       <a href="https://github.com/LucasNarZ">
         <img src="https://github.com/LucasNarz.png" width="80px"/><br/>
-        <sub><b>João Lima</b></sub>
+        <sub><b>Lucas Zabla</b></sub>
       </a>
     </td>
   </tr>
