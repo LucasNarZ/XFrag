@@ -25,36 +25,37 @@
     </section>
 
     <section class="auth-panel">
-      <form class="form-card" action="dashboard.html">
+      <form class="form-card" action="dashboard.html" id="login">
         <p class="eyebrow">Dados do médico</p>
         <h2>Cadastro</h2>
         <div class="form-grid">
           <div class="field">
             <label for="nome">Nome completo</label>
-            <input id="nome" type="text" placeholder="Dra. Ana Silva">
+            <input id="nome" type="text" placeholder="Dra. Ana Silva" name="nome">
           </div>
           <div class="form-grid two">
             <div class="field">
               <label for="crm">CRM</label>
-              <input id="crm" type="text" placeholder="123456">
+              <input id="crm" type="text" placeholder="123456" name="crm">
             </div>
             <div class="field">
               <label for="especialidade">Especialidade</label>
-              <input id="especialidade" type="text" placeholder="Pediatria">
+              <input id="especialidade" type="text" placeholder="Pediatria" name="especialidade">
             </div>
           </div>
           <div class="field">
             <label for="email">Email</label>
-            <input id="email" type="email" placeholder="ana@email.com">
+            <input id="email" type="email" placeholder="ana@email.com" name="email">
           </div>
           <div class="field">
             <label for="senha">Senha</label>
-            <input id="senha" type="password" placeholder="Mínimo de 8 caracteres">
+            <input id="senha" type="password" placeholder="Mínimo de 8 caracteres" name="senha">
           </div>
           <button class="btn primary" type="submit">Cadastrar e continuar</button>
         </div>
       </form>
     </section>
   </main>
+  <script src="../cadastro.js"></script>
 </body>
 </html>
