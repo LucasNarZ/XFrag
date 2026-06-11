@@ -2,6 +2,7 @@ async function getdata(login) {
     console.log(login)
   const response = await fetch("http://localhost:3000/api/auth/login", {
     method: "POST",
+    credentials: "include",
     headers: {
       "Content-Type": "application/json" // informa que o corpo é JSON
     },
@@ -10,9 +11,11 @@ async function getdata(login) {
 
   const data = await response.json(); // aguarda a resposta convertida em JSON
   console.log("Resposta da API:", data);
+  return response.ok
 }
+
 const form = document.getElementById("login");
-form.addEventListener("submit", function(event) {
+form.addEventListener("submit", async function(event) {
   event.preventDefault();
 
   const dados = new FormData(form);
@@ -24,7 +27,10 @@ form.addEventListener("submit", function(event) {
   }
 
   // Envia para a API
-  getdata(paciente);
 
-  window.location.href = "dashboard.html"
+  let ok = await getdata(paciente);
+  if (ok){window.location.href = "dashboard.html"}
+
+
+
 });
