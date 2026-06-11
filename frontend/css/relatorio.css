@@ -1,0 +1,31 @@
+.report-hero {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 24px;
+  align-items: center;
+  color: #ffffff;
+  background: var(--blue-900);
+}
+
+.score-ring {
+  width: 150px;
+  height: 150px;
+  display: grid;
+  place-items: center;
+  border: 12px solid rgba(255, 255, 255, 0.24);
+  border-top-color: #ffffff;
+  border-radius: 999px;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.report-hero h2,
+.report-hero .muted {
+  color: #ffffff;
+}
+
+@media (max-width: 900px) {
+  .report-hero {
+    grid-template-columns: 1fr;
+  }
+}

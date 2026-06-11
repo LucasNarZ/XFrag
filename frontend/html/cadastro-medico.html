@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projeto EC | Cadastro Médico</title>
-  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/cadastro-medico.css">
 </head>
 <body>
   <main class="auth-page">
@@ -21,41 +22,41 @@
         <h1>Crie sua conta médica.</h1>
         <p class="lead">Os dados profissionais identificam o médico responsável pelos pacientes e avaliações registradas.</p>
       </div>
-      <a class="btn secondary" href="../index.html">Voltar para login</a>
+      <a class="btn secondary" href="login.html">Voltar para login</a>
     </section>
 
     <section class="auth-panel">
-      <form class="form-card" action="dashboard.html" id="login">
+      <form class="form-card" action="dashboard.html" id="form_cadastro_medico">
         <p class="eyebrow">Dados do médico</p>
         <h2>Cadastro</h2>
         <div class="form-grid">
           <div class="field">
             <label for="nome">Nome completo</label>
-            <input id="nome" type="text" placeholder="Dra. Ana Silva" name="nome">
+              <input id="nome" type="text" placeholder="Dra. Ana Silva" name="nome" required>
           </div>
           <div class="form-grid two">
             <div class="field">
               <label for="crm">CRM</label>
-              <input id="crm" type="text" placeholder="123456" name="crm">
+                <input id="crm" type="text" placeholder="123456" name="crm" required>
             </div>
             <div class="field">
               <label for="especialidade">Especialidade</label>
-              <input id="especialidade" type="text" placeholder="Pediatria" name="especialidade">
+                <input id="especialidade" type="text" placeholder="Pediatria" name="especialidade" required>
             </div>
           </div>
           <div class="field">
             <label for="email">Email</label>
-            <input id="email" type="email" placeholder="ana@email.com" name="email">
+              <input id="email" type="email" placeholder="ana@email.com" name="email" required>
           </div>
           <div class="field">
             <label for="senha">Senha</label>
-            <input id="senha" type="password" placeholder="Mínimo de 8 caracteres" name="senha">
+              <input id="senha" type="password" placeholder="Mínimo de 8 caracteres" name="senha" minlength="8" required>
           </div>
           <button class="btn primary" type="submit">Cadastrar e continuar</button>
         </div>
       </form>
     </section>
   </main>
-  <script src="../cadastro.js"></script>
+  <script src="../js/cadastro.js"></script>
 </body>
 </html>
