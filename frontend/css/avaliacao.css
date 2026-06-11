@@ -1,0 +1,227 @@
+.patient-inline-card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  width: fit-content;
+  max-width: 100%;
+  margin-top: 16px;
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.86);
+  box-shadow: 0 12px 28px rgba(8, 36, 74, 0.08);
+}
+
+.patient-inline-card strong {
+  color: var(--blue-900);
+}
+
+.patient-inline-card span {
+  padding-left: 10px;
+  border-left: 1px solid var(--line);
+  color: var(--muted);
+}
+
+.checklist {
+  display: grid;
+  gap: 12px;
+}
+
+.grouped-checklist {
+  gap: 22px;
+}
+
+.check-group {
+  display: grid;
+  gap: 0;
+  overflow: hidden;
+  border: 2px solid #b8c6d8;
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0 12px 28px rgba(8, 36, 74, 0.08);
+}
+
+.check-group-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 12px 16px;
+  border-bottom: 1px solid rgba(8, 36, 74, 0.08);
+  background: var(--blue-100);
+}
+
+.check-group-header h2,
+.check-group-header .eyebrow {
+  margin-bottom: 0;
+}
+
+.check-group-header span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 30px;
+  padding: 0 12px;
+  border-radius: 999px;
+  color: var(--blue-800);
+  background: var(--blue-100);
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 0.76rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.check-group-cognitive {
+  border-color: #78b6e9;
+}
+
+.check-group-cognitive .check-group-header {
+  background: #d9eeff;
+}
+
+.check-group-behavior {
+  border-color: #d2b55c;
+}
+
+.check-group-behavior .check-group-header {
+  background: #fff2bd;
+}
+
+.check-group-behavior .check-group-header h2 {
+  color: #735800;
+}
+
+.check-group-physical {
+  border-color: #e2a0a8;
+}
+
+.check-group-physical .check-group-header {
+  background: #ffd8dc;
+}
+
+.check-group-physical .check-group-header h2 {
+  color: #8e1f2c;
+}
+
+.check-items {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px 18px;
+  padding: 16px;
+}
+
+.check-item {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  min-height: auto;
+  padding: 4px 2px;
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+  background: transparent;
+  transition: border-color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
+}
+
+.check-item:hover {
+  box-shadow: none;
+  transform: none;
+}
+
+.check-item input {
+  position: absolute;
+  opacity: 0;
+}
+
+.check-box {
+  position: relative;
+  flex: 0 0 auto;
+  width: 28px;
+  height: 28px;
+  margin-top: -2px;
+  border: 4px solid var(--blue-600);
+  border-radius: 4px;
+  background: #f7fbff;
+}
+
+.check-box::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 11px;
+  height: 6px;
+  border-bottom: 3px solid #ffffff;
+  border-left: 3px solid #ffffff;
+  opacity: 0;
+  transform: rotate(-45deg);
+}
+
+.check-item input:checked + .check-box {
+  border-color: var(--blue-700);
+  background: var(--blue-700);
+}
+
+.check-item input:checked + .check-box::after {
+  opacity: 1;
+}
+
+.check-item input:checked ~ .check-copy strong {
+  color: var(--blue-700);
+}
+
+.check-group-behavior .check-box {
+  border-color: #e4b900;
+}
+
+.check-group-behavior .check-item input:checked + .check-box {
+  border-color: #c89a00;
+  background: #c89a00;
+}
+
+.check-group-behavior .check-item input:checked ~ .check-copy strong {
+  color: #735800;
+}
+
+.check-group-physical .check-box {
+  border-color: #d72032;
+}
+
+.check-group-physical .check-item input:checked + .check-box {
+  border-color: #b51223;
+  background: #b51223;
+}
+
+.check-group-physical .check-item input:checked ~ .check-copy strong {
+  color: #8e1f2c;
+}
+
+.check-copy {
+  display: block;
+}
+
+.check-item strong {
+  display: block;
+  color: var(--blue-900);
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 0.88rem;
+}
+
+.check-copy span {
+  display: block;
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+@media (max-width: 900px) {
+  .check-items {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  .check-items {
+    grid-template-columns: 1fr;
+  }
+}

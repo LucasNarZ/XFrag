@@ -1,0 +1,25 @@
+.metric {
+  position: relative;
+  overflow: hidden;
+  min-height: 146px;
+}
+
+.metric::after {
+  content: "";
+  position: absolute;
+  right: -40px;
+  bottom: -54px;
+  width: 150px;
+  height: 150px;
+  border: 18px solid rgba(35, 130, 214, 0.12);
+  border-radius: 999px;
+}
+
+.metric-number {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--blue-800);
+  font-size: 3rem;
+  line-height: 1;
+  letter-spacing: -0.06em;
+}

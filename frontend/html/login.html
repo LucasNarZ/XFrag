@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projeto EC | Login</title>
-  <link rel="stylesheet" href="../assets/css/style.css">
-
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/login.css">
 </head>
 <body>
   <main class="auth-page">
@@ -28,7 +28,7 @@
     </section>
 
     <section class="auth-panel">
-      <form class="form-card" action="pages-design/login.html">
+      <form class="form-card" action="dashboard.html" id="login">
         <p class="eyebrow">Acesso médico</p>
         <h2>Entrar no sistema</h2>
         <div class="form-grid">
@@ -41,11 +41,11 @@
             <input id="senha" type="password" placeholder="Digite sua senha" name = "senha">
           </div>
           <button class="btn primary" type="submit">Entrar</button>
-          <a class="btn secondary" href="pages-design/cadastro-medico.html">Criar conta médica</a>
+          <a class="btn secondary" href="cadastro-medico.html">Criar conta médica</a>
         </div>
       </form>
     </section>
   </main>
-  <script src="../login.js"></script>
+  <script src="../js/login.js"></script>
 </body>
 </html>
