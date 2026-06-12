@@ -14,21 +14,21 @@ async function getdata(avaliacoes) {
   return response.ok
 }
 
-const form = document.getElementById("medico");
+const form = document.getElementById("avaliacao_form");
 form.addEventListener("submit", async function(event) {
   event.preventDefault();
 
   const dados = new FormData(form);
 
   // Converte FormData em objeto simples
-  const paciente = {};
+  const avliacoes = {};
   for (let [chave, valor] of dados.entries()) {
-    paciente[chave] = valor;
+    avliacoes[chave] = valor;
   }
 
   // Envia para a API
 
-  let ok = await getdata(paciente);
+  let ok = await getdata(avliacoes);
   if (ok){window.location.href = "dashboard.html"}
 
 
