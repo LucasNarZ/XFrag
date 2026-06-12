@@ -15,7 +15,7 @@
             <div class="brand">
                 <div class="brand-mark">EC</div>
                 <div>
-                    <p class="brand-title">Projeto EC</p>
+                    <p class="brand-title">XFrag</p>
                     <p class="brand-caption">Checklist clínico</p>
                 </div>
             </div>
@@ -31,8 +31,7 @@
                 <div>
                     <p class="eyebrow">Nova avaliação</p>
                     <h1>Checklist de sintomas por categoria.</h1>
-                    <p class="lead">Percorra cada grupo clínico e marque apenas as características presentes no
-                        paciente.</p>
+                    <p class="lead">Percorra cada grupo clínico e marque apenas as características presentes no paciente.</p>
                     <div class="patient-inline-card">
                         <strong>Paciente </strong>
                         <span>João Silva</span>
@@ -48,8 +47,9 @@
                 </div>
             </header>
 
-            <form class="grid" action="relatorio.html">
+            <form class="grid" action="relatorio.html" id="avaliacao_form">
                 <section class="checklist grouped-checklist">
+                    
                     <div class="check-group check-group-cognitive">
                         <header class="check-group-header">
                             <div>
@@ -59,23 +59,50 @@
                             <span data-group-count>0 selecionados</span>
                         </header>
                         <div class="check-items">
-                            <label class="check-item"><input type="checkbox" data-symptom="yes"><span
-                                    class="check-box"></span><span class="check-copy"><strong>Deficiencia
-                                        intelectual</strong><span>Código: DEFICIENCIA_INTELECTUAL</span></span></label>
-                            <label class="check-item"><input type="checkbox" data-symptom="yes"><span
-                                    class="check-box"></span><span class="check-copy"><strong>Dificuldades de
-                                        aprendizagem</strong><span>Código:
-                                        DIFICULDADES_APRENDIZAGEM</span></span></label>
-                            <label class="check-item"><input type="checkbox" data-symptom="yes"><span
-                                    class="check-box"></span><span class="check-copy"><strong>Atraso na
-                                        fala</strong><span>Código: ATRASO_FALA</span></span></label>
-                            <label class="check-item"><input type="checkbox" data-symptom="yes"><span
-                                    class="check-box"></span><span class="check-copy"><strong>Deficit de
-                                        atencao</strong><span>Código: DEFICIT_ATENCAO</span></span></label>
-                            <label class="check-item"><input type="checkbox" data-symptom="yes"><span
-                                    class="check-box"></span><span
-                                    class="check-copy"><strong>Hiperatividade</strong><span>Código:
-                                        HIPERATIVIDADE</span></span></label>
+                            <label class="check-item">
+                                <input type="checkbox" data-symptom="yes" name="DEFICIENCIA_INTELECTUAL">
+                                <span class="check-box"></span>
+                                <span class="check-copy">
+                                    <strong>Deficiencia intelectual</strong>
+                                    <span>Código: DEFICIENCIA_INTELECTUAL</span>
+                                </span>
+                            </label>
+                            
+                            <label class="check-item">
+                                <input type="checkbox" data-symptom="yes" name="DIFICULDADES_APRENDIZAGEM">
+                                <span class="check-box"></span>
+                                <span class="check-copy">
+                                    <strong>Dificuldades de aprendizagem</strong>
+                                    <span>Código: DIFICULDADES_APRENDIZAGEM</span>
+                                </span>
+                            </label>
+                            
+                            <label class="check-item">
+                                <input type="checkbox" data-symptom="yes" name="ATRASO_FALA">
+                                <span class="check-box"></span>
+                                <span class="check-copy">
+                                    <strong>Atraso na fala</strong>
+                                    <span>Código: ATRASO_FALA</span>
+                                </span>
+                            </label>
+                            
+                            <label class="check-item">
+                                <input type="checkbox" data-symptom="yes" name="DEFICIT_ATENCAO">
+                                <span class="check-box"></span>
+                                <span class="check-copy">
+                                    <strong>Deficit de atencao</strong>
+                                    <span>Código: DEFICIT_ATENCAO</span>
+                                </span>
+                            </label>
+                            
+                            <label class="check-item">
+                                <input type="checkbox" data-symptom="yes" name="HIPERATIVIDADE">
+                                <span class="check-box"></span>
+                                <span class="check-copy">
+                                    <strong>Hiperatividade</strong>
+                                    <span>Código: HIPERATIVIDADE</span>
+                                </span>
+                            </label>
                         </div>
                     </div>
 
@@ -88,19 +115,41 @@
                             <span data-group-count>0 selecionados</span>
                         </header>
                         <div class="check-items">
-                            <label class="check-item"><input type="checkbox" data-symptom="yes"><span
-                                    class="check-box"></span><span class="check-copy"><strong>Evita contato
-                                        visual</strong><span>Código: EVITA_CONTATO_VISUAL</span></span></label>
-                            <label class="check-item"><input type="checkbox" data-symptom="yes"><span
-                                    class="check-box"></span><span class="check-copy"><strong>Evita contato
-                                        fisico</strong><span>Código: EVITA_CONTATO_FISICO</span></span></label>
-                            <label class="check-item"><input type="checkbox" data-symptom="yes"><span
-                                    class="check-box"></span><span class="check-copy"><strong>Movimentos
-                                        repetitivos</strong><span>Código: MOVIMENTOS_REPETITIVOS</span></span></label>
-                            <label class="check-item"><input type="checkbox" data-symptom="yes"><span
-                                    class="check-box"></span><span
-                                    class="check-copy"><strong>Agressividade</strong><span>Código:
-                                        AGRESSIVIDADE</span></span></label>
+                            <label class="check-item">
+                                <input type="checkbox" data-symptom="yes" name="EVITA_CONTATO_VISUAL">
+                                <span class="check-box"></span>
+                                <span class="check-copy">
+                                    <strong>Evita contato visual</strong>
+                                    <span>Código: EVITA_CONTATO_VISUAL</span>
+                                </span>
+                            </label>
+                            
+                            <label class="check-item">
+                                <input type="checkbox" data-symptom="yes" name="EVITA_CONTATO_FISICO">
+                                <span class="check-box"></span>
+                                <span class="check-copy">
+                                    <strong>Evita contato fisico</strong>
+                                    <span>Código: EVITA_CONTATO_FISICO</span>
+                                </span>
+                            </label>
+                            
+                            <label class="check-item">
+                                <input type="checkbox" data-symptom="yes" name="MOVIMENTOS_REPETITIVOS">
+                                <span class="check-box"></span>
+                                <span class="check-copy">
+                                    <strong>Movimentos repetitivos</strong>
+                                    <span>Código: MOVIMENTOS_REPETITIVOS</span>
+                                </span>
+                            </label>
+                            
+                            <label class="check-item">
+                                <input type="checkbox" data-symptom="yes" name="AGRESSIVIDADE">
+                                <span class="check-box"></span>
+                                <span class="check-copy">
+                                    <strong>Agressividade</strong>
+                                    <span>Código: AGRESSIVIDADE</span>
+                                </span>
+                            </label>
                         </div>
                     </div>
 
@@ -113,25 +162,42 @@
                             <span data-group-count>0 selecionados</span>
                         </header>
                         <div class="check-items">
-                            <label class="check-item"><input type="checkbox" data-symptom="yes"><span
-                                    class="check-box"></span><span class="check-copy"><strong>Face
-                                        alongada/orelhas</strong><span>Código:
-                                        FACE_ALONGADA_ORELHAS</span></span></label>
-                            <label class="check-item"><input type="checkbox" data-symptom="yes"><span
-                                    class="check-box"></span><span
-                                    class="check-copy"><strong>Macroorquidismo</strong><span>Código:
-                                        MACROORQUIDISMO</span></span></label>
-                            <label class="check-item"><input type="checkbox" data-symptom="yes"><span
-                                    class="check-box"></span><span class="check-copy"><strong>Hipermobilidade
-                                        articular</strong><span>Código: HIPERMOBILIDADE_ARTICULAR</span></span></label>
+                            <label class="check-item">
+                                <input type="checkbox" data-symptom="yes" name="FACE_ALONGADA_ORELHAS">
+                                <span class="check-box"></span>
+                                <span class="check-copy">
+                                    <strong>Face alongada/orelhas</strong>
+                                    <span>Código: FACE_ALONGADA_ORELHAS</span>
+                                </span>
+                            </label>
+                            
+                            <label class="check-item">
+                                <input type="checkbox" data-symptom="yes" name="MACROORQUIDISMO">
+                                <span class="check-box"></span>
+                                <span class="check-copy">
+                                    <strong>Macroorquidismo</strong>
+                                    <span>Código: MACROORQUIDISMO</span>
+                                </span>
+                            </label>
+                            
+                            <label class="check-item">
+                                <input type="checkbox" data-symptom="yes" name="HIPERMOBILIDADE_ARTICULAR">
+                                <span class="check-box"></span>
+                                <span class="check-copy">
+                                    <strong>Hipermobilidade articular</strong>
+                                    <span>Código: HIPERMOBILIDADE_ARTICULAR</span>
+                                </span>
+                            </label>
                         </div>
                     </div>
+                    
                 </section>
 
                 <div class="field">
                     <label for="observacoes">Observações da avaliação</label>
                     <textarea id="observacoes" name="observacoes" placeholder="Registre observações clínicas relevantes."></textarea>
                 </div>
+                
                 <div class="button-row">
                     <button class="btn primary" type="submit">Gerar relatório</button>
                     <a class="btn secondary" href="dashboard.html">Cancelar</a>

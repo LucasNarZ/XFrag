@@ -10,7 +10,7 @@
 <body>
   <div class="app-shell">
     <aside class="sidebar">
-      <div class="brand"><div class="brand-mark">EC</div><div><p class="brand-title">Projeto EC</p><p class="brand-caption">Cadastro clínico</p></div></div>
+      <div class="brand"><div class="brand-mark">EC</div><div><p class="brand-title">XFrag</p><p class="brand-caption">Cadastro clínico</p></div></div>
       <nav class="nav-list">
         <a class="nav-link" href="dashboard.html">Pacientes</a>
         <a class="nav-link" href="avaliacoes.html">Avaliações</a>
@@ -27,31 +27,31 @@
         </div>
       </header>
 
-      <form class="form-card" action="dashboard.html">
+      <form class="form-card" action="dashboard.html" id="paciente_form">
         <div class="form-grid two">
           <div class="field">
             <label for="nome">Nome completo</label>
-            <input id="nome" type="text" value="João Silva" name="nome">
+            <input id="nome" type="text" placeholder="João Silva" name="nome">
           </div>
           <div class="field">
             <label for="data">Data de nascimento</label>
-            <input id="data" type="date" value="2015-08-20" name="data">
+            <input id="data" type="date" placeholder="2015-08-20" name="data_nascimento">
           </div>
           <div class="field">
             <label for="sexo">Sexo</label>
-            <select id="sexo">
+            <select id="sexo" name="sexo">
               <option>Masculino</option>
               <option>Feminino</option>
             </select>
           </div>
           <div class="field">
             <label for="responsavel">Responsável</label>
-            <input id="responsavel" type="text" value="Maria Silva" name="responsavel">
+            <input id="responsavel" type="text" placeholder="Maria Silva" name="responsavel">
           </div>
         </div>
         <div class="field" style="margin-top: 16px;">
           <label for="observacoes">Observações</label>
-          <textarea id="observacoes">Paciente acompanhado pela mãe.</textarea>
+          <textarea id="observacoes" name ="observacoes"></textarea> 
         </div>
         <div class="button-row" style="margin-top: 20px;">
           <button class="btn primary" type="submit">Salvar paciente</button>
