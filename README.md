@@ -1,8 +1,8 @@
-# Projeto EC
+# XFrag
 
 ## Descrição
 
-O Projeto EC é uma plataforma desenvolvida para auxiliar médicos na identificação de possíveis características relacionadas à Síndrome do X Frágil.
+O XFrag é uma plataforma desenvolvida para auxiliar médicos na identificação de possíveis características relacionadas à Síndrome do X Frágil.
 
 O sistema funciona através de um checklist clínico, onde cada característica possui um peso específico. Ao final, o sistema realiza uma pontuação que pode indicar uma possível portabilidade da síndrome.
 
