@@ -1,100 +1,100 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projeto EC | Pacientes</title>
-  <link rel="stylesheet" href="../css/base.css">
-  <link rel="stylesheet" href="../css/dashboard.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto EC | Pacientes</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
 </head>
+
 <body>
-  <div class="app-shell">
-    <aside class="sidebar">
-      <div class="brand">
-        <div class="brand-mark">EC</div>
-        <div>
-          <p class="brand-title">Projeto EC</p>
-          <p class="brand-caption">Dra. Ana Silva</p>
-        </div>
-      </div>
-      <nav class="nav-list">
-        <a class="nav-link active" href="dashboard.html">Pacientes</a>
-        <a class="nav-link" href="avaliacoes.html">Avaliações</a>
-        <a class="nav-link" href="login.html">Sair</a>
-      </nav>
-      <div class="sidebar-card">
-        <strong>Triagem responsável</strong>
-        <span>A pontuação auxilia a decisão médica, mas não substitui avaliação clínica ou exames laboratoriais.</span>
-      </div>
-    </aside>
+    <div class="app-shell">
+        <aside class="sidebar">
+            <div class="brand">
+                <div class="brand-mark">EC</div>
+                <div>
+                    <p class="brand-title">Projeto EC</p>
+                    <p class="brand-caption">Dra. Ana Silva</p>
+                </div>
+            </div>
+            <nav class="nav-list">
+                <a class="nav-link active" href="dashboard.html">Pacientes</a>
+                <a class="nav-link" href="avaliacoes.html">Avaliações</a>
+                <a class="nav-link" href="login.html">Sair</a>
+            </nav>
+            <div class="sidebar-card">
+                <strong>Triagem responsável</strong>
+                <span>A pontuação auxilia a decisão médica, mas não substitui avaliação clínica ou exames
+                    laboratoriais.</span>
+            </div>
+        </aside>
 
-    <main class="main">
-      <header class="page-header">
-        <div>
-          <p class="eyebrow">Painel</p>
-          <h1>Pacientes em acompanhamento.</h1>
-          <p class="lead">Consulte pacientes cadastrados e inicie novas avaliações clínicas.</p>
-        </div>
-        <a class="btn primary" href="paciente-form.html">Novo paciente</a>
-      </header>
+        <main class="main">
+            <header class="page-header">
+                <div>
+                    <p class="eyebrow">Painel</p>
+                    <h1>Pacientes em acompanhamento.</h1>
+                    <p class="lead">Consulte pacientes cadastrados e inicie novas avaliações clínicas.</p>
+                </div>
+                <a class="btn primary" href="paciente-form.html">Novo paciente</a>
+            </header>
 
-      <section class="grid three">
-        <article class="card metric">
-          <span class="metric-number">18</span>
-          <p class="muted">pacientes cadastrados</p>
-        </article>
-        <article class="card metric">
-          <span class="metric-number">42</span>
-          <p class="muted">avaliações concluídas</p>
-        </article>
-        <article class="card metric">
-          <span class="metric-number">7</span>
-          <p class="muted">recomendações de encaminhamento</p>
-        </article>
-      </section>
+            <section class="grid three">
+                <article class="card metric">
+                    <span class="metric-number">18</span>
+                    <p class="muted">pacientes cadastrados</p>
+                </article>
+                <article class="card metric">
+                    <span class="metric-number">42</span>
+                    <p class="muted">avaliações concluídas</p>
+                </article>
+                <article class="card metric">
+                    <span class="metric-number">7</span>
+                    <p class="muted">recomendações de encaminhamento</p>
+                </article>
+            </section>
 
-      <section class="table-card" style="margin-top: 24px;">
-        <table>
-          <thead>
-            <tr>
-              <th>Paciente</th>
-              <th>Nascimento</th>
-              <th>Sexo</th>
-              <th>Responsável</th>
-              <th>Última avaliação</th>
-              <th>Ações</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>João Silva</td>
-              <td>20/08/2015</td>
-              <td>Masculino</td>
-              <td>Maria Silva</td>
-              <td><span class="status warn">Encaminhar</span></td>
-              <td><a class="btn secondary" href="avaliacao.html">Avaliar</a></td>
-            </tr>
-            <tr>
-              <td>Clara Mendes</td>
-              <td>11/02/2018</td>
-              <td>Feminino</td>
-              <td>Paulo Mendes</td>
-              <td><span class="status good">Acompanhar</span></td>
-              <td><a class="btn secondary" href="avaliacao.html">Avaliar</a></td>
-            </tr>
-            <tr>
-              <td>Pedro Alves</td>
-              <td>03/05/2016</td>
-              <td>Masculino</td>
-              <td>Renata Alves</td>
-              <td><span class="status good">Sem avaliação</span></td>
-              <td><a class="btn secondary" href="paciente-form.html">Editar</a></td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
-    </main>
-  </div>
-  <script src="../js/dashboard.js"></script>
+            <section class="table-card" style="margin-top: 24px;">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Paciente</th>
+                            <th>Nascimento</th>
+                            <th>Sexo</th>
+                            <th>Responsável</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>João Silva</td>
+                            <td>20/08/2015</td>
+                            <td>Masculino</td>
+                            <td>Maria Silva</td>
+                            <td><a class="btn secondary" href="avaliacao.html">Avaliar</a></td>
+                        </tr>
+                        <tr>
+                            <td>Clara Mendes</td>
+                            <td>11/02/2018</td>
+                            <td>Feminino</td>
+                            <td>Paulo Mendes</td>
+                            <td><a class="btn secondary" href="avaliacao.html">Avaliar</a></td>
+                        </tr>
+                        <tr>
+                            <td>Pedro Alves</td>
+                            <td>03/05/2016</td>
+                            <td>Masculino</td>
+                            <td>Renata Alves</td>
+                            <td><a class="btn secondary" href="paciente-form.html">Editar</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+    <script src="../js/dashboard.js"></script>
 </body>
+
 </html>
