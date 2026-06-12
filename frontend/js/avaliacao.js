@@ -107,7 +107,8 @@ async function iniciarPagina() {
         const resultado = await getdata(avaliacao, pacienteId);
 
         if (resultado) {
-            window.location.href = `relatorio.html?avaliacao_id=${resultado.id}`;
+            sessionStorage.setItem("avaliacao_id", resultado.id);
+            window.location.href = "relatorio.html";
         }
     });
 }
