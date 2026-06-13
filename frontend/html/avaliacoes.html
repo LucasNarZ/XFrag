@@ -3,14 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>XFrag | Avaliações</title>
+  <title>Avaliações</title>
+
   <link rel="stylesheet" href="../css/base.css">
   <link rel="stylesheet" href="../css/avaliacoes.css">
 </head>
 <body>
   <div class="app-shell">
+
     <aside class="sidebar">
-      <div class="brand"><div class="brand-mark">EC</div><div><p class="brand-title">XFrag</p><p class="brand-caption">Histórico clínico</p></div></div>
+      <div class="brand">
+        <div class="brand-mark">EC</div>
+        <div>
+          <p class="brand-title">Projeto EC</p>
+          <p class="brand-caption">Histórico clínico</p>
+        </div>
+      </div>
+
       <nav class="nav-list">
         <a class="nav-link" href="dashboard.html">Pacientes</a>
         <a class="nav-link active" href="avaliacoes.html">Avaliações</a>
@@ -23,7 +32,9 @@
         <div>
           <p class="eyebrow">Histórico</p>
           <h1>Avaliações realizadas.</h1>
-          <p class="lead">Acesse relatórios anteriores e acompanhe a evolução dos pacientes.</p>
+          <p class="lead">
+            Acesse relatórios anteriores e acompanhe a evolução dos pacientes.
+          </p>
         </div>
       </header>
 
@@ -38,15 +49,14 @@
               <th>Relatório</th>
             </tr>
           </thead>
-          <tbody>
-            <tr><td>João Silva</td><td>01/06/2026</td><td>0.64</td><td><span class="status warn">Encaminhar</span></td><td><a class="btn secondary" href="relatorio.html">Ver</a></td></tr>
-            <tr><td>Clara Mendes</td><td>28/05/2026</td><td>0.32</td><td><span class="status good">Nao encaminhar</span></td><td><a class="btn secondary" href="relatorio.html">Ver</a></td></tr>
-            <tr><td>Pedro Alves</td><td>22/05/2026</td><td>0.48</td><td><span class="status good">Nao encaminhar</span></td><td><a class="btn secondary" href="relatorio.html">Ver</a></td></tr>
+
+          <tbody id="tabela-avaliacoes">
           </tbody>
         </table>
       </section>
     </main>
   </div>
+
   <script src="../js/avaliacoes.js"></script>
 </body>
 </html>
