@@ -20,16 +20,9 @@ function Avaliacao(avaliacao) {
 }
 
 async function carregarAvaliacoes() {
-  const pacienteId = sessionStorage.getItem("paciente_id");
-
-  if (!pacienteId) {
-    alert("Nenhum paciente foi selecionado.");
-    return;
-  }
-
   try {
     const response = await fetch(
-      `http://localhost:3000/api/pacientes/${pacienteId}/avaliacoes`,
+      `http://localhost:3000/api/avaliacoes`,
       {
         method: "GET",
         credentials: "include",
