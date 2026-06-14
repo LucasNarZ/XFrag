@@ -35,4 +35,5 @@ class RelatorioService:
             recomendacao=avaliacao.recomendacao,
             mensagem_recomendacao=cls.build_message(avaliacao.recomendacao),
             observacoes=avaliacao.observacoes,
+            sintomas=avaliacao.sintomas,
         )
