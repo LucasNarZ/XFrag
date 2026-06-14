@@ -1,62 +1,98 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>XFrag | Cadastro Médico</title>
-  <link rel="stylesheet" href="../css/base.css">
-  <link rel="stylesheet" href="../css/cadastro-medico.css">
-</head>
-<body>
-  <main class="auth-page">
-    <section class="auth-hero">
-      <div class="brand">
-        <div class="brand-mark">PUC</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>XFrag | Cadastro Médico</title>
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/cadastro-medico.css" />
+  </head>
+  <body>
+    <main class="auth-page">
+      <section class="auth-hero">
+        <div class="brand">
+          <div class="brand-mark">PUC</div>
+          <div>
+            <p class="brand-title">XFrag</p>
+            <p class="brand-caption">Cadastro profissional</p>
+          </div>
+        </div>
         <div>
-          <p class="brand-title">XFrag</p>
-          <p class="brand-caption">Cadastro profissional</p>
+          <p class="eyebrow">Primeiro acesso</p>
+          <h1>Crie sua conta médica.</h1>
+          <p class="lead">
+            Os dados profissionais identificam o médico responsável pelos
+            pacientes e avaliações registradas.
+          </p>
         </div>
-      </div>
-      <div>
-        <p class="eyebrow">Primeiro acesso</p>
-        <h1>Crie sua conta médica.</h1>
-        <p class="lead">Os dados profissionais identificam o médico responsável pelos pacientes e avaliações registradas.</p>
-      </div>
-      <a class="btn secondary" href="login.html">Voltar para login</a>
-    </section>
+        <a class="btn secondary" href="login.html">Voltar para login</a>
+      </section>
 
-    <section class="auth-panel">
-      <form class="form-card" action="login.html" id="form_cadastro_medico">
-        <p class="eyebrow">Dados do médico</p>
-        <h2>Cadastro</h2>
-        <div class="form-grid">
-          <div class="field">
-            <label for="nome">Nome completo</label>
-              <input id="nome" type="text" placeholder="Dra. Ana Silva" name="nome" required>
-          </div>
-          <div class="form-grid two">
+      <section class="auth-panel">
+        <form class="form-card" id="form_cadastro_medico">
+          <p class="eyebrow">Dados do médico</p>
+          <h2>Cadastro</h2>
+          <div class="form-grid">
             <div class="field">
-              <label for="crm">CRM</label>
-                <input id="crm" type="text" placeholder="123456" name="crm" required>
+              <label for="nome">Nome completo</label>
+              <input
+                id="nome"
+                type="text"
+                placeholder="Dra. Ana Silva"
+                name="nome"
+                required
+              />
+            </div>
+            <div class="form-grid two">
+              <div class="field">
+                <label for="crm">CRM</label>
+                <input
+                  id="crm"
+                  type="text"
+                  placeholder="123456"
+                  name="crm"
+                  required
+                />
+              </div>
+              <div class="field">
+                <label for="especialidade">Especialidade</label>
+                <input
+                  id="especialidade"
+                  type="text"
+                  placeholder="Pediatria"
+                  name="especialidade"
+                  required
+                />
+              </div>
             </div>
             <div class="field">
-              <label for="especialidade">Especialidade</label>
-                <input id="especialidade" type="text" placeholder="Pediatria" name="especialidade" required>
+              <label for="email">Email</label>
+              <input
+                id="email"
+                type="email"
+                placeholder="ana@email.com"
+                name="email"
+                required
+              />
             </div>
+            <div class="field">
+              <label for="senha">Senha</label>
+              <input
+                id="senha"
+                type="password"
+                placeholder="Mínimo de 8 caracteres"
+                name="senha"
+                minlength="8"
+                required
+              />
+            </div>
+            <button class="btn primary" type="submit">
+              Cadastrar e continuar
+            </button>
           </div>
-          <div class="field">
-            <label for="email">Email</label>
-              <input id="email" type="email" placeholder="ana@email.com" name="email" required>
-          </div>
-          <div class="field">
-            <label for="senha">Senha</label>
-              <input id="senha" type="password" placeholder="Mínimo de 8 caracteres" name="senha" minlength="8" required>
-          </div>
-          <button class="btn primary" type="submit">Cadastrar e continuar</button>
-        </div>
-      </form>
-    </section>
-  </main>
-  <script src="../js/cadastro.js"></script>
-</body>
+        </form>
+      </section>
+    </main>
+    <script src="../js/cadastro.js"></script>
+  </body>
 </html>

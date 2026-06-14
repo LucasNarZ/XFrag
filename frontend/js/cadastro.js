@@ -1,21 +1,21 @@
 async function getdata(cadastro) {
-    console.log(cadastro)
+  console.log(cadastro);
   const response = await fetch("http://localhost:3000/api/medicos/", {
     method: "POST",
     credentials: "include",
     headers: {
-      "Content-Type": "application/json" // informa que o corpo é JSON
+      "Content-Type": "application/json", // informa que o corpo é JSON
     },
-    body: JSON.stringify(cadastro)
+    body: JSON.stringify(cadastro),
   });
 
   const data = await response.json(); // aguarda a resposta convertida em JSON
   console.log("Resposta da API:", data);
-  return response.ok
+  return response.ok;
 }
 
-const form = document.getElementById("medico");
-form.addEventListener("submit", async function(event) {
+const form = document.getElementById("form_cadastro_medico");
+form.addEventListener("submit", async function (event) {
   event.preventDefault();
 
   const dados = new FormData(form);
@@ -29,9 +29,7 @@ form.addEventListener("submit", async function(event) {
   // Envia para a API
 
   let ok = await getdata(paciente);
-  if (ok){window.location.href = "login.html"}
-
-
-
+  if (ok) {
+    window.location.href = "login.html";
+  }
 });
-
