@@ -8,6 +8,10 @@ O sistema funciona através de um checklist clínico, onde cada característica 
 
 O principal objetivo do projeto é ajudar profissionais da saúde a realizarem uma triagem inicial de forma mais acessível, reduzindo a necessidade de repetição frequente de exames laboratoriais, que possuem alto custo.
 
+# Vídeo
+
+Link do vídeo da utilização do site: https://youtu.be/gDJPfLZcPwo
+
 # Funcionalidades
 
 - Checklist clínico de pacientes
