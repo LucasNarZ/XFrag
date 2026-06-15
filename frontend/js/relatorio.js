@@ -5,14 +5,12 @@ function formatarData(data) {
 function formatarSexo(sexo) {
     if (sexo === "M") return "Masculino";
     if (sexo === "F") return "Feminino";
-
     return sexo;
 }
 
 function formatarRecomendacao(recomendacao) {
     if (recomendacao === "ENCAMINHAR") return "Encaminhar";
     if (recomendacao === "NAO_ENCAMINHAR") return "Não encaminhar";
-
     return recomendacao;
 }
 
@@ -22,7 +20,6 @@ function classeRecomendacao(recomendacao) {
 
 async function carregarRelatorio() {
     const avaliacaoId = sessionStorage.getItem("avaliacao_id");
-
     if (!avaliacaoId) {
         alert("Avaliação não informada.");
         window.location.href = "avaliacoes.html";
@@ -46,6 +43,7 @@ async function carregarRelatorio() {
     const cards = document.querySelectorAll(".grid.two .card");
     const dadosPaciente = cards[0].querySelectorAll("p");
     const resumo = cards[1].querySelectorAll("p");
+
     const sintomasPresentes = relatorio.sintomas ? relatorio.sintomas.filter((item) => item.presente).length : 0;
     const totalSintomas = relatorio.sintomas ? relatorio.sintomas.length : 0;
     const recomendacao = formatarRecomendacao(relatorio.recomendacao);
@@ -66,4 +64,39 @@ async function carregarRelatorio() {
     resumo[2].innerHTML = `<strong>Resultado:</strong> <span class="status ${classe}">${recomendacao}</span>`;
 }
 
+function configurarBotaoPdf() {
+    const botaoPdf = document.getElementById("btn-baixar-pdf");
+    const conteudo = document.getElementById("relatorio-conteudo");
+
+    if (!botaoPdf || !conteudo) {
+        return;
+    }
+
+    botaoPdf.addEventListener("click", () => {
+        const nomePaciente = conteudo.querySelector(".eyebrow")?.textContent.trim() || "paciente";
+        const nomeArquivo = `relatorio-${nomePaciente.toLowerCase().replace(/\s+/g, "-")}.pdf`;
+
+        const opcoes = {
+            margin: 10,
+            filename: nomeArquivo,
+            image: { type: "jpeg", quality: 0.98 },
+            html2canvas: { scale: 2, useCORS: true },
+            jsPDF: { unit: "mm", format: "a4", orientation: "portrait" },
+        };
+
+        botaoPdf.disabled = true;
+        botaoPdf.textContent = "Gerando PDF...";
+
+        html2pdf()
+            .set(opcoes)
+            .from(conteudo)
+            .save()
+            .finally(() => {
+                botaoPdf.disabled = false;
+                botaoPdf.textContent = "Baixar PDF";
+            });
+    });
+}
+
+configurarBotaoPdf();
 carregarRelatorio();

@@ -27,36 +27,41 @@
         </div>
         <div class="button-row">
           <a class="btn secondary" href="avaliacoes.html">Voltar</a>
+          <button class="btn secondary" id="btn-baixar-pdf" type="button">Baixar PDF</button>
+          <a class="btn primary" href="avaliacao.html">Nova avaliação</a>
         </div>
       </header>
 
-      <section class="card report-hero">
-        <div>
-          <p class="eyebrow" style="color: #b9d8f5;">João Silva</p>
-          <h2>Recomendação: encaminhar</h2>
-          <p class="muted">A pontuação atingiu o limite definido para paciente masculino.</p>
-        </div>
-        <div class="score-ring">0.64</div>
-      </section>
+      <div id="relatorio-conteudo">
+        <section class="card report-hero">
+          <div>
+            <p class="eyebrow" style="color: #b9d8f5;">João Silva</p>
+            <h2>Recomendação: encaminhar</h2>
+            <p class="muted">A pontuação atingiu o limite definido para paciente masculino.</p>
+          </div>
+          <div class="score-ring">0.64</div>
+        </section>
 
-      <section class="grid two" style="margin-top: 24px;">
-        <article class="card">
-          <h2>Dados do paciente</h2>
-          <p><strong>Nome:</strong> João Silva</p>
-          <p><strong>Nascimento:</strong> 20/08/2015</p>
-          <p><strong>Sexo:</strong> Masculino</p>
-          <p><strong>Responsável:</strong> Maria Silva</p>
-        </article>
-        <article class="card">
-          <h2>Resumo clínico</h2>
-          <p><strong>Sintomas presentes:</strong> 8 de 12</p>
-          <p><strong>Limite usado:</strong> 0.5600</p>
-          <p><strong>Resultado:</strong> <span class="status warn">Encaminhar</span></p>
-          <p class="muted">Este relatório é uma ferramenta de apoio à triagem inicial.</p>
-        </article>
-      </section>
+        <section class="grid two" style="margin-top: 24px;">
+          <article class="card">
+            <h2>Dados do paciente</h2>
+            <p><strong>Nome:</strong> João Silva</p>
+            <p><strong>Nascimento:</strong> 20/08/2015</p>
+            <p><strong>Sexo:</strong> Masculino</p>
+            <p><strong>Responsável:</strong> Maria Silva</p>
+          </article>
+          <article class="card">
+            <h2>Resumo clínico</h2>
+            <p><strong>Sintomas presentes:</strong> 8 de 12</p>
+            <p><strong>Limite usado:</strong> 0.5600</p>
+            <p><strong>Resultado:</strong> <span class="status warn">Encaminhar</span></p>
+            <p class="muted">Este relatório é uma ferramenta de apoio à triagem inicial.</p>
+          </article>
+        </section>
+      </div>
     </main>
   </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
   <script src="../js/relatorio.js"></script>
 </body>
 </html>

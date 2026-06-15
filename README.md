@@ -83,5 +83,5 @@ Este projeto está sob a licença GNU.
 Este projeto possui fins acadêmicos e busca contribuir com ferramentas de apoio à saúde e triagem clínica.
 
 <p align="center">
-  Desenvolvido pela equipe Projeto EC
+  Desenvolvido pela equipe XFrag
 </p>

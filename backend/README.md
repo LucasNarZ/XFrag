@@ -1,4 +1,4 @@
-# Backend do Projeto EC
+# Backend do XFrag
 
 Este backend é a parte do sistema responsável por receber pedidos do frontend, validar as informações, consultar ou salvar dados no banco e devolver uma resposta.
 
