@@ -64,14 +64,6 @@ async function carregarPaciente(pacienteId) {
     campos[2].textContent = `Nascimento: ${formatarData(paciente.data_nascimento)}`;
 }
 
-function atualizarPrevia() {
-    const sintomas = document.querySelectorAll("input[data-symptom]");
-    const selecionados = document.querySelectorAll("input[data-symptom]:checked");
-    const contador = document.querySelector("[data-selected-count]");
-
-    contador.textContent = `${selecionados.length} de ${sintomas.length}`;
-}
-
 async function iniciarPagina() {
     const params = new URLSearchParams(window.location.search);
     const pacienteId = params.get("paciente_id") || sessionStorage.getItem("paciente_id");
@@ -84,12 +76,6 @@ async function iniciarPagina() {
 
     carregarPaciente(pacienteId);
     const sintomas = await carregarSintomas();
-
-    form.addEventListener("change", function(event) {
-        if (event.target.matches("input[data-symptom]")) {
-            atualizarPrevia();
-        }
-    });
 
     form.addEventListener("submit", async function(event) {
         event.preventDefault();

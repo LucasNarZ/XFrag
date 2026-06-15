@@ -53,3 +53,4 @@ class RelatorioAvaliacaoResponse(BaseSchema):
     recomendacao: Recomendacao
     mensagem_recomendacao: str
     observacoes: str | None = None
+    sintomas: list[AvaliacaoSintomaResponse]
